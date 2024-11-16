@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <!--roboto font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+ 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+
+        <!-- HEADER -->
+        <div class="header">
+
+            <div class="headerTop">
+                <img id="profilePic" src="icons/profile-pic.png">
+                <div class="greeting">Hi there,</div>
+                <div class="username">Paul (@paulT90)</div>
+
+                <div class="headerTopButtons">
+                    <button class="headerBtn">New</button>
+                    <button class="headerBtn">Upload</button>
+                    <button class="headerBtn">Share</button>
+                </div>
+            </div>
+
+            <div class="headerBottom">
+                <label for="searchBar">
+                    <img id ="siteIcons" src="icons/search.svg">
+                    <input type="text" id="searchBar" name="searchBar"/>
+                </label>
+                <!-- fix it -->
+                <img id ="siteIcons" src="icons/notification.svg">
+            </div>
+
+        </div>
+
+        <!-- SIDEBAR -->
+        <div class="sidebar">
+            <h2 id="sidebarTitle">
+                <img id="sidebarTitleIMG" src="icons/dashboard.svg">
+                Dashboard
+            </h2>
+
+                <ul id="sidebarGroup1">
+
+                    <li class="sidebarList group1 item1">
+                        <img id="sidebarIcons" src="icons/home.svg">
+                        Home
+                    </li>
+
+                    <li class="sidebarList group1 item2">
+                        <img id="sidebarIcons" src="icons/account.svg">
+                        Profile
+                    </li>
+
+                    <li class="sidebarList group1 item3">
+                        <img id="sidebarIcons" src="icons/messages.svg">
+                        Messages
+                    </li>
+
+                    <li class="sidebarList group1 item4">
+                        <img id="sidebarIcons" src="icons/history.svg">
+                        History
+                    </li>
+
+                    <li class="sidebarList group1 item5">
+                        <img id="sidebarIcons" src="icons/notes.svg">
+                        Notes
+                    </li>
+
+                    <li class="sidebarList group1 item6">
+                        <img id="sidebarIcons" src="icons/community.svg">
+                        Community
+                    </li>
+
+                </ul>
+
+                <ul id="sidebarGroup2">
+
+                    <li class="sidebarList group2 item1">
+                        <img id ="sidebarIcons" src="icons/settings.svg">
+                        Settings
+                    </li>
+
+                    <li class="sidebarList group2 item2">
+                        <img id="sidebarIcons" src="icons/theme.svg">
+                        Theme
+                    </li>
+
+                </ul>
+
+                <ul id="sidebarGroup3">
+
+                    <li class="sidebarList group3 item1">
+                        <img id="sidebarIcons" src="icons/policy.svg">
+                        Privacy
+                    </li>
+
+                    <li class="sidebarList group3 item2">
+                        <img id="sidebarIcons" src="icons/face-agent.svg">
+                        Support
+                    </li>
+
+                    <li class="sidebarList group3 item3">
+                        <img id="sidebarIcons" src="icons/logout.svg">
+                        Log out
+                    </li>
+
+                </ul>
+
+        </div>
+
+        <!-- MAIN -->
+        <div class="main">
+            
+            <!-- MAIN LEFT SIDE -->
+            <div class="mainLeft">
+
+                 <div class="project-card">
+                    <h4>CSS Grid Mockup</h4>
+                    <p>*What you're seeing right now.
+                    </p>
+                    <p> *<small>it's strictly a design-based site - as in,
+                        it has no JS/TS. The buttons are fake and the searchbar doesn't return anything.
+                    </small></p>
+                    <p><small>I still think it looks cool, though.</small></p>
+                 </div>
+
+                <div class="project-card">
+                    <h4>Interactive Calculator</h4>
+                    <p>Supports basic arithmetic operations,
+                        deleting single entries and/or clearing the entire entry.
+                        Keyboard support and theme switching included.
+                    </p>
+                    <a href="https://github.com/paulTan09/interactive-calculator">GitHub</a>
+                    <a href="https://paultan09.github.io/interactive-calculator/">Live Page</a>
+                </div>
+
+                <div class="project-card">
+                    <h4>Discord BOT</h4>
+                    <p>Discord bot used for Counter-Strike 2 lineups.
+                        To use, type [/map-name] in the server chat.
+                        The bot is deployed via a OAuth2 key.
+                    </p>
+                    <p>Last updated @ Mar 28, 2024.</p>
+                    <a href="https://github.com/paulTan09/discordCS2Bot">GitHub</a>
+                </div>
+
+                <div class="project-card">
+                    <h4>Etch-a-Sketch</h4>
+                    <p>Basic (and somewhat ugly) etch-a-sketch site.
+                        Uses RGB randomizers for the colors.
+                    </p>
+                    <a href="https://github.com/paulTan09/etch-a-sketch">GitHub</a>
+                    <a href="https://paultan09.github.io/etch-a-sketch/">Live Page</a>
+                </div>
+
+                <div class="project-card">
+                    <h4>Form Validation Mockup</h4>
+                    <p>HTML/CSS only.</p>
+                    <a href="https://github.com/paulTan09/Form-Validation">GitHub</a>
+                    <a href="https://paultan09.github.io/Form-Validation/">Live Page</a>
+                </div>
+
+                <div class="project-card">
+                    <h4>Temperature Reader (ESP32)</h4>
+                    <p>C++ temperature reader compatible with ESP32 MCUs.
+                        Uses DS18B20 Dallas temperature sensors.
+                    </p>
+                    <p>Received data is sent every few seconds to GDocs via API calls.</p>
+                    <a href="https://github.com/paulTan09/esp32_sensor">GitHub</a>
+                </div>
+
+                <div class="project-card">
+                    <h4>Landing Page</h4>
+                    <p>Made while I was learning Flexbox
+                         - really banged my head against the wall with this one.
+                    </p>
+                    <a href="https://github.com/paulTan09/landing-page">GitHub</a>
+                    <a href="https://paultan09.github.io/landing-page/">Live Page</a>
+                </div>
+
+                <div class="project-card">
+                    <h4>Notepad Clone</h4>
+                    <p>Written in C#. It was more of an experiment
+                        to see if I could replicate Windows 11's default Notepad app.
+                        I think I achieved that (somewhat).
+                    </p>
+                    <a href="https://github.com/paulTan09/notepadKnockoff">GitHub</a>
+                </div>
+
+            </div>
+
+            <!-- MAIN RIGHT SIDE -->
+            <div class="mainRight">
+
+                <div class="announcements">
+                    <h2 style="text-align: center;">Announcement (PC)</h2>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                </div>
+
+                <div class="trending">
+                    <h2 style="text-align: center;">Trending (PC)</h2>
+                    <ul>
+                       <li class="trending-item">
+                            <img id="profilePic" src="icons/dogHat.jpg">
+                            <div class="trendingText">
+                                <p class="trendingUsername">@billy42</p>
+                                <p class=trendingUsernameDescription>got a lawnmower for $100 @ walmart lol</p>
+                            </div>
+                        </li>
+
+                        <li class="trending-item">
+                            <img id="profilePic" src="icons/catHat.jpg">
+                            <div class="trendingText">
+                                <p class="trendingUsername">@catqueen</p>
+                                <p class=trendingUsernameDescription>omggg I can't find my catnip</p>
+                            </div>
+                        </li>
+
+                        <li class="trending-item">
+                            <img id="profilePic" src="icons/frogHat.jpg">
+                            <div class="trendingText">
+                                <p class="trendingUsername">@nightmareKiller9000</p>
+                                <p class=trendingUsernameDescription>burp</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            
+        </div>
+
+    </div>
+
+</body>
+</html>
